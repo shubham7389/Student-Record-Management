@@ -29,11 +29,11 @@ public class DeleteStudentS extends HttpServlet {
 			int i=ps.executeUpdate();
 			if(i>0)
 			{
-				out.println("student successfully delete");
+				out.println("<script>window.alert('Student information sucessfully deleted')</script>");
 			}
 			else
 			{
-				out.println("student not delete");
+				out.println("<script>window.alert('Student information not deleted')</script>");
 			}
 			con.close();
 		}
